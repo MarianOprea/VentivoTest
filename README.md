@@ -5,7 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install it by
 
 Clone the project somewhere.
-First run `npm install` and check the next step to run it.
+<br>
+Switch the folder with: `cd VentivoTest` withing the same terminal after cloning.
+<br>
+First run `npm install` to install packages and check the next step to run it.
 
 ## Development server
 
