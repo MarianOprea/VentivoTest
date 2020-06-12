@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "0783222232",
+      "email": "j.doe@test.com",
+      "password": "ventivo123"
+    },
+    {
+      "id": 2,
+      "firstName": "Marian",
+      "lastName": "Oprea",
+      "phoneNumber": "0782224222",
+      "email": "marian.oprea@test.com",
+      "password": "ventivo123"
+    },
+    {
+      "id": 3,
+      "firstName": "Ruxandra",
+      "lastName": "Ion",
+      "phoneNumber": "0782222225",
+      "email": "ruxandra.ion@test.com",
+      "password": "ventivo123"
+    },
+    {
+      "id": 4,
+      "firstName": "user",
+      "lastName": "doi",
+      "phoneNumber": "0782222224",
+      "email": "user.doi@test.com",
+      "password": "ventivo123"
+    },
+    {
+      "id": 5,
+      "firstName": "Test",
+      "lastName": "User",
+      "phoneNumber": "0782282226",
+      "email": "test.user@test.com",
+      "password": "ventivo123"
+    }
+  ]
+}

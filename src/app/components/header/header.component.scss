@@ -1,0 +1,17 @@
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+
+    &.header--container{
+        background-color: purple;
+        color:white;
+    }
+
+    .header__title{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}

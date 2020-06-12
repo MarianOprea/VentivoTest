@@ -1,0 +1,31 @@
+<div class="login-container">
+    <mat-form-field class="login-container_input">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="login-container_input">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" [formControl]="passwordFormControl">
+        <mat-error *ngIf="passwordFormControl.hasError('required')">
+            Please enter password
+        </mat-error>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="login-container_button" (click)="login()"
+        [disabled]="emailFormControl.invalid || passwordFormControl.invalid">Login</button>
+
+    <mat-error *ngIf="credentialsInvalid">
+        Credentials invalid
+    </mat-error>
+</div>

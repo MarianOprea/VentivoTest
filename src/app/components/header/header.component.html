@@ -1,0 +1,12 @@
+<div class="header header--container">
+    <span class="header__title">Ventivo Test</span>
+    <div class="header__logout--panel">
+        <span>Hi, {{userFirstName}} !</span>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="logout()">Logout</button>
+        </mat-menu>
+    </div>
+</div>

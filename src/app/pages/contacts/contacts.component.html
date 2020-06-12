@@ -1,0 +1,20 @@
+<h3>Welcome to Contacts</h3>
+
+
+<app-contacts-table [contactsData]="userData" (action)="applyAction($event)"></app-contacts-table>
+
+<ng-template #confirmationDialog let-data>
+    <mat-dialog-content>
+        <p>
+            Delete user {{data.firstName + ' ' + data.lastName}} ?
+        </p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-stroked-button matDialogClose>
+            Close
+        </button>
+        <button mat-flat-button color="primary" cdkFocusInitial [matDialogClose]="true">
+            Delete
+        </button>
+    </mat-dialog-actions>
+</ng-template>
