@@ -33,7 +33,7 @@ export class ApiService {
   }
 
   addContact(contact: IUser) {
-    const id = this.cache.size + 2;
+    const id = Math.floor(Math.random() * 100) + 1;
     this.cache.set(id, { ...contact, id });
     return Promise.resolve();
   }
